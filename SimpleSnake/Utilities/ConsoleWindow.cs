@@ -16,10 +16,13 @@
         public static void CustomizeConsole()
         {
             Console.OutputEncoding = Encoding.Unicode;
-            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
-            ShowWindow(ThisConsole, MAXIMIZE);
+
+            Console.SetWindowSize(100, 25);
+            Console.SetBufferSize(100, 25);
+
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
+
             Console.Clear();
             Console.CursorVisible = false;
         }

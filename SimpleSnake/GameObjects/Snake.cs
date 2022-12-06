@@ -28,6 +28,7 @@ namespace SimpleSnake.GameObjects
 
             this.GetFoods();
             this.CreateSnake();
+            this.foods[foodIndex].SetRandomPosition(this.snakeElements);
         }
 
         private int RandomFoodNumber => new Random().Next(0, this.foods.Length);
